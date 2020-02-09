@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-<meta charset="UTF">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, intial-scale=1.0">
 <meta http-equiv="X-Compatitble" content="ie=edge">
-<link rel="stylesheet" type="text/css" href="mainpage.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="form.css">
+
 <title>Christopher Recinos</title>
 <!--Website for portolio main landing page html code-->
 
 </head>
 
 
-<body>
+<body class="body">
     <!--code for template of responsive navigation bar-->
-    
-<div class="container">
-
     <div class="topnav">
-        <a id="active">Christopher Recinos</a> 
+        <h1 class="active">Christopher Recinos</h1> 
+        <!-- nav right width 100% be sure to check widths -->
         <div class="nav-right">
-    
-            <a href="Homewwork-1.html">About Me</a>
-            <a href="Portfolio.html">Portfolio</a>
-            <a href="Contact-Me.html">Contact</a>
+            
+            <ul>
+                <li><a href="Contact-Me.html">Contact</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="index.html">About Me</a></li>
+            </ul>
         </div>
-    </div>
-
-
+    </div>  
+<div class="content">
     <!--container for information that is to be displayed on each webpage-->
    <form action="/action_page.php">
-    <label>First Name</label>
-    
-    <div class="column">
-        <input type="text" id="fname" name="firstname" placeholder="Your Firstname...">
+        <br>
 
-    <label>Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your Last Name...">
+       <h2>Contact</h2>
+        
+        <br>
 
-    <label>Email</label>
-    
-        <input type="text" id="email" name="youremail" placeholder="Your email...">
+        <hr>
+        <p id="bio">Name</p>
+        
+        <div class="column">
+            <input type="text" id="fname" name="firstname" placeholder="Your Name...">
 
-    <label>Subject</label>
+        <p id="bio">Email</p>
+            
+                <input type="text" id="email" name="youremail" placeholder="Your email...">
+        <p id="bio">Message</p>
 
-    <input type="text" id="subj" name="yoursubject" placeholder="Subject...">
-
-    <label>Message</label>
-
-    <textarea id="info" name="yourinfo" placeholder="Write your message..." style="height: auto;">
-
-    </div>
-
-
-   </form>
+            <textarea id="info" name="yourinfo" placeholder="Write your message...">
+                
+            <div class="row">
+            <button type="button" onclick="alert ('Email Sent')">Submit</button>
+            </div>
+    </form>
 
 
 </div>

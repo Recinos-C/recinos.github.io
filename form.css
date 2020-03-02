@@ -1,13 +1,18 @@
 input[type=text], select, textarea {
-    float: left;
-  width: 100%;
+  float: left;
+  width: 95%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-left: 10px;
   margin-right:10px;
-}
+  margin-bottom:20px;
 
+}
+form{
+  margin-left: 20px;
+  margin-right: 20px;
+}
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;

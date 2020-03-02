@@ -1,13 +1,14 @@
 .row{
     display:flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+
     float:left;
 }
 
 .column{
     flex: 50%;
     padding: 0 4px;
+    
 
 }
 
@@ -19,18 +20,25 @@
 }
 .container-box{
     position:relative;
+    text-align: center;
+    color: #efee7e;
+    margin:10px;
 }
 
+h4{
+    color: white;
+}
 h3{
     color: #efee7e;
 }
 
 .text-block{
     position: absolute;
-    bottom:20px;
-    right:20px;
+    top: 83.5%;
+    left: 50%;
+    width:200px;
     background-color: hsl(174, 72%, 56%);
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;  
+    opacity: 75%;
+    transform: translate(-50%,-50%);
+
 }

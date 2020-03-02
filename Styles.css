@@ -1,31 +1,43 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height:100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('surface-945444_1920.jpg');
+}
+
+
 .body{
 margin: auto;
 width: 960px;
-background-color: wheat;
+position: relative;
+min-height:100%;
+
+}
+#main{
+    overflow: auto;
 }
 .topnav {
-    
-    overflow: hidden;
     background-color:#efeee7;
     margin-bottom: 20px;
-    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2)
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    align-items: center;
+    display: flex;
   }
 
 ul{
+  
     box-sizing: border-box;
-    width:100%;
     margin-bottom: 20px;
-    align-items: center;
+    padding: 20px;
+}
 
-    padding: 30px;
-}
-.nav-right{
-    float:right;
-    
-}
 
 li, a{
-    float:right;
+    float: left;
     text-align: center;
     list-style: none;
     text-decoration: none;
@@ -36,29 +48,31 @@ li, a{
 .nav-right a:hover{
     color: hsl(174, 72%, 56%);
 }
-.active{
-    float:left;
 
+.active{
+    
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 8%;
+    margin-right: 28%;
     padding: 30px;
     color: #efeee7;
     background: hsl(174, 72%, 56%);
-    margin:0px;
-    
-
+   
 }
 
 .content{
-
+    overflow: hidden;
     background: #efeee7;
-    margin-bottom:auto;
+   
     padding-bottom: 10px;
 }
 
 #My-image {
     float: left;
-    width:200px;
-    height: 200px;
-    margin: 15px 20px 20px 20px;
+    max-width:75%;
+    max-height: 75%;
+    margin: 20px 20px 20px 20px;
     
 }
 
@@ -70,27 +84,32 @@ li, a{
 h2{
     color: hsl(174, 72%, 56%); 
     margin-left: 30px;
+    font-size: 45px;
 }
 #bio{
 color: #bbb;
-margin: 20px;
+margin: 20px 20px 20px 20px ;
 }
 
 hr{
     border:1px solid #bbb;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: auto;
+    
 }
 #footer{
     background-color:#333;
+    height: 50px;
     margin-top: 20px;
     width: 100%;
     border-top: 5px solid hsl(174, 72%, 56%);
     position: fixed;
-    left: 0;
-    bottom: 0;
+    left:0;
+    bottom:0;
     text-align: center;
     color: #efeee7;
+    clear: both;
   
 }
  

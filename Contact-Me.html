@@ -11,22 +11,24 @@
 <!--Website for portolio main landing page html code-->
 
 </head>
-
-
-<body class="body">
-    <!--code for template of responsive navigation bar-->
-    <div class="topnav">
+ <div class="topnav">
         <h1 class="active">Christopher Recinos</h1> 
         <!-- nav right width 100% be sure to check widths -->
         <div class="nav-right">
             
             <ul>
-                <li><a href="Contact-Me.html">Contact</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
                 <li><a href="index.html">About Me</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Contact-Me.html">Contact</a></li>
+                
+                
             </ul>
         </div>
     </div>  
+
+<body class="body">
+    <!--code for template of responsive navigation bar-->
+   
 <div class="content">
     <!--container for information that is to be displayed on each webpage-->
    <form action="/action_page.php">
@@ -41,13 +43,14 @@
         
         <div class="column">
             <input type="text" id="fname" name="firstname" placeholder="Your Name...">
-
-        <p id="bio">Email</p>
             
+        <p id="bio">Email</p>
+          
                 <input type="text" id="email" name="youremail" placeholder="Your email...">
+               
         <p id="bio">Message</p>
-
-            <textarea id="info" name="yourinfo" placeholder="Write your message...">
+            
+            <textarea id="info" name="yourinfo" placeholder="Write your message..." style ="height:200px; width:95%"></textarea>
                 
             <div class="row">
             <button type="button" onclick="alert ('Email Sent')">Submit</button>
